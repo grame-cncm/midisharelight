@@ -14,8 +14,8 @@
 #ifndef __msFields__
 #define __msFields__
 
-#include "MidiShareLight.h"
-#define MSFunctionType(type) type
+# include "MidiShareLight.h"
+# define MSFunctionType(type) type
 
 MSFunctionType(MidiEvPtr) MSGetLink (MidiEvPtr e);
 MSFunctionType(void)      MSSetLink (MidiEvPtr e, MidiEvPtr next);
