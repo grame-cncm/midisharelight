@@ -20,11 +20,7 @@
 
 #define nil 0
 
-#if defined(linux) || defined(__MACH__)
-# define MFAPI
-//# define errno  /* a revoir */
-
-#elif defined(WIN32)
+#if defined(WIN32)
 # ifdef __BuildDLL__
 #  ifdef __BuildLib__
 #	define MFAPI	__declspec(dllexport)
@@ -33,11 +29,11 @@
 #  endif
 # else
 #	define MFAPI
+# endif
+#else
+#	define MFAPI
 #endif
 
-#else
-#error "architecture undefined"
-#endif
 
 #ifdef __x86_64__
  typedef int	int32;
