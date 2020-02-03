@@ -18,8 +18,8 @@
 #define __msEvents__
 
 
-# include "MidiShareLight.h"
-# define MSFunctionType(type) type
+#include "MidiShareLight.h"
+#define MSFunctionType(type) type
 
 #include "lifo.h"
 
