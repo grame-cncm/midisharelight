@@ -1,1 +1,9 @@
 .DS_Store
+cmake/CMakeCache.txt
+cmake/CMakeFiles
+cmake/CMakeScripts
+cmake/cmake_install.cmake
+cmake/midisharelight.build
+cmake/midisharelight.xcodeproj
+bin
+lib
